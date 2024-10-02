@@ -15,12 +15,12 @@ body{
 #conteudo_banner{
     width: 550px;
     color: white;
-    margin-left: 250px;
+    margin-left: 5%;
 }
 
 #conteudo_banner h1{
-    font-size: 50px;
-    line-height: 48px;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
 }
 
 #conteudo_banner p:nth-of-type(1){
@@ -85,6 +85,7 @@ body{
 
 #secao_smartphone{
     margin-right: 50px;
+    text-align: center;
 }
 #secao_smartphone h1{
     font-size: 40px;
@@ -93,3 +94,66 @@ body{
 #secao_smartphone #btn_baixar{
     margin-top: 200px;
 }
+
+#conteudo_tablet{
+    background-color: #202226;
+    display: none;
+    padding: 50px;
+    color: white;
+}
+
+.icones{
+    width: 200px;
+    height: 200px;
+}
+
+/* Configuração para tablets e smartphones */
+@media screen and (max-width: 1024px){
+    #conteudo_tablet{
+        display: block;
+    }
+    #conteudo_desktop{
+        display: none;
+    }
+    #conteudo_banner{
+        margin-left: 40px;
+    }
+    #conteudo_banner h1{
+        font-size: 4.2vw;
+        line-height: 6vw;
+    }
+    .secoes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .icones{
+        width: 200px;
+        height: 200px;
+    }
+    .conteudo_secao{
+        width: 90%;
+    }
+    #foto_autora{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    #conteudo_autora{
+        width: 90%;
+        text-align: center;
+    }
+    #secao_smartphone{
+        width: 70%;
+        margin: auto;
+    }
+
+    #secao_smartphone #btn_baixar{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #copyright{
+        font-size: 14px;
+    }
+
+    
+}/*Fim da configuração tablets e smartphones*/
