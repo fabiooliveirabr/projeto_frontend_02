@@ -154,6 +154,12 @@ body{
     #copyright{
         font-size: 14px;
     }
+    #btn_baixar{
+        font-size: 15px;
+    }
+    #smartphone{
+        width: 200px;
+    }
 
     
 }/*Fim da configuração tablets e smartphones*/
